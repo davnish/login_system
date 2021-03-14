@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>332</width>
-    <height>401</height>
+    <height>400</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -32,8 +32,8 @@
     <widget class="QLabel" name="label">
      <property name="geometry">
       <rect>
-       <x>-20</x>
-       <y>-20</y>
+       <x>0</x>
+       <y>0</y>
        <width>351</width>
        <height>421</height>
       </rect>
@@ -74,7 +74,7 @@ background-repeat:none;</string>
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>../../../Downloads/google site/icons8-account-100.png</pixmap>
+      <pixmap resource="resource.qrc">:/resources/img/icons8-account-100.png</pixmap>
      </property>
     </widget>
     <widget class="QLabel" name="label_3">
@@ -260,8 +260,8 @@ QPushButton:hover{
       <string>Login</string>
      </property>
      <property name="icon">
-      <iconset>
-       <normaloff>../../../Downloads/google site/icons8-login-48.png</normaloff>../../../Downloads/google site/icons8-login-48.png</iconset>
+      <iconset resource="resource.qrc">
+       <normaloff>:/resources/img/icons8-login-48.png</normaloff>:/resources/img/icons8-login-48.png</iconset>
      </property>
      <property name="iconSize">
       <size>
@@ -273,6 +273,8 @@ QPushButton:hover{
    </widget>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
  <connections/>
 </ui>

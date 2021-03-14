@@ -1,4 +1,6 @@
  jQT       += core gui
+ QT        += sql
+
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -10,15 +12,21 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    updater.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    updater.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    updater.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    resource.qrc
